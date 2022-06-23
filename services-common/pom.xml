@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.services</groupId>
+        <artifactId>services</artifactId>
+        <version>3.5.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>services-common-log</module>
+        <module>services-common-core</module>
+        <module>services-common-redis</module>
+        <module>services-common-swagger</module>
+        <module>services-common-security</module>
+        <module>services-common-datascope</module>
+		<module>services-common-datasource</module>
+    </modules>
+
+    <artifactId>services-common</artifactId>
+    <packaging>pom</packaging>
+
+    <description>
+	    services-common通用模块
+    </description>
+
+</project>

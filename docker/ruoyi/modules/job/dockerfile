@@ -1,0 +1,15 @@
+# 基础镜像
+FROM  openjdk:8-jre
+# author
+MAINTAINER services
+
+# 挂载目录
+VOLUME /home/services
+# 创建目录
+RUN mkdir -p /home/services
+# 指定路径
+WORKDIR /home/services
+# 复制jar文件到路径
+COPY ./jar/services-modules-job.jar /home/services/services-modules-job.jar
+# 启动定时任务服务
+ENTRYPOINT ["java","-jar","services-modules-job.jar"]
